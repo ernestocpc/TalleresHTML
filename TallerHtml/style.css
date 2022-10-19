@@ -1,0 +1,57 @@
+
+#navegacion{
+    background-color:darkcyan !important;
+}
+body{
+  background-color: lightblue;
+}
+#partykirby{
+  max-width: 3%;
+}
+.carousel slide{
+  max-width: 100%;
+  margin: 0px;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #4F518C, #4F518C);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.texto-footer{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+#lista-anime
+{
+  text-align: left;
+}
+
+#lista-anime-container{
+  border-top-left-radius: 55px;
+  border-bottom-left-radius: 55px;
+
+  background: #81b2e2;
+}
+.anime{
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#footer{
+  padding-left: 100px;
+  border-top: #4F518C 5px solid;
+  background-color: lightblue;
+
+}

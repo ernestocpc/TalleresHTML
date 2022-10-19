@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <title>Taller HTML</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body id="inicio">
+  <!-- NavBar -->
+  <nav class="navbar bg-light fixed-top" id="navegacion">
+    <div class="container-fluid">
+      <img src="https://cdn.betterttv.net/emote/605ba6aa7493072efdeb3dd0/3x" id="partykirby" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Indice</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#videojuegos">Videojuegos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#anime">Animes</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#suscribete">Suscribete</a>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SlideShow -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img class="slide-image" src="https://wallpapercave.com/wp/wp7724163.jpg" alt="Imagen de un anime" width="100%"
+          height="100%" />
+      </div>
+      <div class="carousel-item">
+        <img class="slide-image" src="https://wallpaperaccess.com/full/3823169.jpg" alt="Imagen de un juego"
+          width="100%" height="100%" />
+      </div>
+      <div class="carousel-item active">
+        <img class="slide-image" src="https://wallpaperaccess.com/full/1507648.jpg" alt="Imagen del juego ARK"
+          width="100%" height="100%" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h2 class="titulo" id="videojuegos">Videojuegos</h2>
+  <p></p>
+  <!-- Cards -->
+  <div id="content" class="container-fluid">
+    <div class="card-group" style="padding-top: 20px">
+      <!-- Card 1 -->
+      <div class="card" id="valorant">
+        <img src="https://images.hdqwalls.com/wallpapers/valorant-2020-5k-dq.jpg" class="card-img-top"
+          alt="imagen de valorant" />
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold">Valorant</h5>
+          <p class="card-text">
+            Valorant es un hero FPS (First person shooter) multijugador
+            gratuito desarrollado y publicado por Riot Games.
+          </p>
+          <a href="https://playvalorant.com/es-mx/" target="_blank" class="btn btn-light">Pagina Oficial</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" id="lol">
+        <img
+          src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2017/12/277827-fondos-pantalla-league-legends.jpg?itok=c_ndLZMK"
+          class="card-img-top" alt="imagen de lol" />
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold">
+            League of legends
+          </h5>
+          <p class="card-text">
+            Es un juego de estrategia por equipos (MOBA) en el que dos equipos
+            de cinco campeones se enfrentan para ver quién destruye antes la
+            base del otro
+          </p>
+          <a href="https://www.leagueoflegends.com/es-mx/" target="_blank" class="btn btn-light">Pagina Oficial</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" id="overwatch">
+        <img
+          src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_480x270/public/media/image/2022/10/overwatch-2-2833297.jpg?itok=DgMJBUvl"
+          class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold">Overwatch 2</h5>
+          <p class="card-text">
+            Un hero shooter en equipos de 5 donde cada jugador elige uno de
+            varios héroes disponibles, cada uno con movimientos y habilidades
+            únicas.
+          </p>
+          <a href="https://overwatch.blizzard.com/en-us/" target="_blank" class="btn btn-light">Pagina Oficial</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" id="elden-ring">
+        <img
+          src="https://static.bandainamcoent.eu/high/elden-ring/elden-ring/00-page-setup/elden-ring-new-header-mobile.jpg"
+          class="card-img-top" alt="Foto del Elden ring" />
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold">Elden Ring</h5>
+          <p class="card-text">
+            El nuevo juego de fantasía épica de FromSoftware, Inc. y BANDAI
+            NAMCO Entertainment Inc. Hace parte de los soul like games,
+            caracterizados por ser de gran dificultad.
+          </p>
+          <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring" target="_blank" class="btn btn-light">Pagina
+            Oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="titulo" id="anime">Anime</h2>
+
+  <div class="container-fluid" id="image-anime">
+    <div class="row">
+      <img src="https://images2.alphacoders.com/856/thumb-1920-856712.jpg" />
+    </div>
+    <div class="row">
+      <div class="col-7">
+        <p class="anime">
+          En adicion a los videojuegos, los animes han sido de mis principales hobbies en los ultimos años con una
+          inclinacion hacia los generos de accion, sci-fi y suspenso.
+          A continuacion te muestro algunos de mis favoritos... tambien esta <a
+            href="https://myanimelist.net/animelist/StealthMonkey0">este</a> link para poder ver una lista (casi)
+          completa de los animes que he visto.
+        </p>
+      </div>
+      <div class="col" id="lista-anime-container">
+        <ul class="anime" id="lista-anime">
+          <li class="anime-list">One piece</li>
+          <li class="anime-list">Psyco Pass</li>
+          <li class="anime-list">Vinland saga</li>
+          <li class="anime-list">Vivy: Fluorite Eye's Song</li>
+          <li class="anime-list">JoJo no Kimyou na Bouken</li>
+          <li class="anime-list">Wotakoi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Formulario  -->
+  <div class="row">
+    <footer class="texto-footer">
+      <h2 class="titulo" id="suscribete">Suscribete</h2>
+      <form class="row g-3" id="footer">
+        <p>Si te suscribes podras recibir información de las ultimas noticias en juegos y series!</p>
+
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" value="" required="">
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="validationDefault02" value="" required="">
+        </div>
+        <div class="col-5">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required="">
+            <label class="form-check-label" for="invalidCheck2">
+              Acepto los términos y condiciones
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </footer>
+  </div>
+</body>
+
+</html>
