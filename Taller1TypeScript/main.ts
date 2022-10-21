@@ -1,7 +1,6 @@
 
 import { Serie } from "./serie.js";
 import { dataSeries } from "./dataSeries.js";
-
 let serieTbody: HTMLElement = document.getElementById("series")!;
 const averageSeason: HTMLElement = document.getElementById("season-average")!;
 
@@ -21,6 +20,7 @@ function renderSeriesInTable(series: Serie[]): void{
 
     });
 }
+
 
 function getAverageSeason(serie: Serie[]): number{
     let average: number = 0;
