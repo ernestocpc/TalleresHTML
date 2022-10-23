@@ -12,12 +12,15 @@ function renderSeriesInTable(series: Serie[]): void {
     console.log("Desplegando series en tabla");
     series.forEach(serie => {
         let trElement = document.createElement("tr");
+
         trElement.innerHTML = ` <td>${serie.index}</td>
                                 <td>${serie.name}</td>
                                 <td>${serie.channel}</td>
                                 <td>${serie.season}</td>`;
         serieTbody.appendChild(trElement);
-        trElement.addEventListener("click", () => { showSerie(serie, serie.index) });
+        trElement.children[1].classList.add("link");
+
+        trElement.children[1].addEventListener("click", () => { showSerie(serie, serie.index) });
 
     });
 }

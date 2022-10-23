@@ -15,3 +15,7 @@
     margin-bottom: 1px;
 }
 
+.link{
+    color: rgb(79, 133, 235); 
+    text-decoration: underline;
+}
