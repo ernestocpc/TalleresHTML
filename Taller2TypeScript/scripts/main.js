@@ -9,8 +9,7 @@ function renderSeriesInTable(series) {
         var trElement = document.createElement("tr");
         trElement.innerHTML = " <td>".concat(serie.index, "</td>\n                                <td>").concat(serie.name, "</td>\n                                <td>").concat(serie.channel, "</td>\n                                <td>").concat(serie.season, "</td>");
         serieTbody.appendChild(trElement);
-        // trElement.children[1].classList.add("link");
-        trElement.children[1].setAttribute("class", "link");
+        trElement.children[1].classList.add("link");
         trElement.children[1].addEventListener("click", function () { showSerie(serie, serie.index); });
     });
 }
