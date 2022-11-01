@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Serie} from './serie';
 import { dataSeries } from './dataSeries';
-const averageSeason: HTMLElement = document.getElementById("season-average")!;
 
-// averageSeason.innerHTML = `${getAverageSeason(dataSeries)}`
+
+getAverageSeason(dataSeries)
 
 @Component({
   selector: 'app-serie',
@@ -13,10 +13,13 @@ const averageSeason: HTMLElement = document.getElementById("season-average")!;
 export class SerieComponent implements OnInit {
 
   series: Array<Serie> = [];
+  averageSeason: number = getAverageSeason(dataSeries);
+
   constructor() { }
   getSerieList(): Array<Serie> {
     return dataSeries;
   }
+
   ngOnInit() {
     this.series = this.getSerieList();
   }
