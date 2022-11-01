@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="col-6" id="main-table">
+    <div>
+      <table class="table table-striped">
+        <thead class="table-info">
+          <tr>
+            <th class="h4">#</th>
+            <th class="h4">Name</th>
+            <th class="h4">Channel</th>
+            <th class="h4">Seasons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of series">
+            <ng-template>
+
+            </ng-template>
+            <td>
+              {{s.index}}
+            </td>
+            <td>
+              <dd class="link">{{s.name}}</dd>
+            </td>
+            <td>
+              <dd>{{s.channel}}</dd>
+            </td>
+            <td>
+              <dd>{{s.season}}</dd>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <p class="col-4"><strong>Season average:</strong></p>
+      <p class="col-1" id="season-average">
+          <strong></strong>
+      </p>
+  </div>
+  </div>
+
+</div>
