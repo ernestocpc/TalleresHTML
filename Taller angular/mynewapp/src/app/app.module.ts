@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { SerieModule } from './serie/serie.module';
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { SerieModule } from './serie/serie.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SerieModule
+    SerieModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

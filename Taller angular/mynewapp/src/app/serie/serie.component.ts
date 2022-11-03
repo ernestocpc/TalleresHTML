@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Serie} from './serie';
 import { dataSeries } from './dataSeries';
+import { SerieService } from './serie.service';
 
-
-getAverageSeason(dataSeries)
+// getAverageSeason(dataSeries)
 
 @Component({
   selector: 'app-serie',
@@ -13,16 +13,23 @@ getAverageSeason(dataSeries)
 export class SerieComponent implements OnInit {
 
   series: Array<Serie> = [];
-  averageSeason: number = getAverageSeason(dataSeries);
+  // averageSeason: number = getAverageSeason(dataSeries);
 
-  constructor() { }
+  constructor(private serieService: SerieService) { }
+
   getSerieList(): Array<Serie> {
-    return dataSeries;
+    return dataSeries
   }
 
-  ngOnInit() {
-    this.series = this.getSerieList();
+  getSeries(){
+    this.serieService.getSeries().subscribe(series => {
+      this.series = series;
+    });
   }
+
+  ngOnInit(){
+    this.getSeries();
+  } 
 }
 
 function getAverageSeason(serie: Serie[]): number {
